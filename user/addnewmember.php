@@ -5,20 +5,20 @@
 	
 	if (empty($user)){
 	?>
-		<script>
-			window.alert('Please select user');
-			window.history.back();
-		</script>
-	<?php
+<script>
+window.alert('Selectionner un utilisateur svp');
+window.history.back();
+</script>
+<?php
 	}
 	else{
 	mysqli_query($conn,"insert into chat_member (userid, chatroomid) values ('$user','$id')");
 	
 	?>
-		<script>
-			window.alert('Member Added Successfully');
-			window.history.back();
-		</script>
-	<?php
+<script>
+window.alert('Membre ajouter avec success');
+window.history.back();
+</script>
+<?php
 	}
 ?>
